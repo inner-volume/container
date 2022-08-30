@@ -1,0 +1,36 @@
+{
+  "name": "openphp/container",
+  "description": "The Container package.",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "qmister",
+      "email": "tp5er@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">7.2",
+    "psr/container": "1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Openphp\\Container\\": "src/"
+    },
+    "files": [
+      "src/helper.php"
+    ]
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.5"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Openphp\\Container\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "tests": [
+      "php vendor/bin/phpunit"
+    ]
+  }
+}
